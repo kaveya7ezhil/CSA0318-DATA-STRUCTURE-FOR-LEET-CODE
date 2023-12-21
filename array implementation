@@ -1,0 +1,65 @@
+1. deletion
+
+#include <stdio.h>
+int f(int arr[], int n, int key);
+int d(int arr[], int n, int key)
+{	int pos = f(arr, n, key);
+	if (pos == -1) {
+		printf("Element not found");
+		return n;
+	}
+	int i;
+	for (i = pos; i < n - 1; i++)
+		arr[i] = arr[i + 1];
+	return n - 1;
+}
+int f(int arr[], int n, int key)
+{
+	int i;
+	for (i = 0; i < n; i++)
+		if (arr[i] == key)
+			return i;
+	return -1;
+}
+int main()
+{
+	int i;
+	int arr[] = { 10, 50, 30, 40, 20 };
+	int n = sizeof(arr) / sizeof(arr[0]);
+	int key = 30;
+	printf("Array before deletion\n");
+	for (i = 0; i < n; i++)
+		printf("%d ", arr[i]);
+	n = d(arr, n, key);
+	printf("\nArray after deletion\n");
+	for (i = 0; i < n; i++)
+		printf("%d ", arr[i]);
+	return 0;
+}
+
+2.display
+
+#include<stdio.h>
+int main(){
+    int arr[]={4,2,1,3,4,5,6};
+    int size = sizeof(arr)/sizeof(arr[0]);
+    for(int i=0;i<size;i++){
+        printf("%d ",arr[i]);
+    }
+}
+
+3.insert
+
+#include<stdio.h>
+int main(){
+    int a[10]={1,2,3,4,5,6,7};
+    int i,b=2,c=10,size=7;
+    for(i=size-1;i>=2;i--)
+    {
+        a[i+1]=a[i];
+    }
+    a[2]=c;
+    for(int j=0;j<7;j++){
+        printf("%d ",a[j]);
+    }
+}
