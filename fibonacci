@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int i, n, first=0, second=1, sum=0;
+    printf("\nEnter number of terms : ");
+    scanf("%d",&n);
+    printf("\nFibonacci Series is:\n %d %d ", first, second); 
+  
+    i=2;    
+   
+    while (i<n)
+    {
+        sum=first+second;
+        first=second;
+        second=sum;
+        ++i;
+        printf("%d ",sum);
+    }
+    return 0;
+}
