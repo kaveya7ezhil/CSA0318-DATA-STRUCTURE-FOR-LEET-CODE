@@ -8,8 +8,7 @@
 8.		Write a C program to search a number using Linear Search method
 9.		Write a C program to search a number using Binary Search method
 10.		Write a C program to implement Linked list operations
-11.		Write a C program to implement Stack operations such as PUSH, 
-POP and PEEK
+11.		Write a C program to implement Stack operations such as PUSH,POP and PEEK
 12.		Write a C program to implement the application of Stack (Notations)
 13.		Write a C program to implement Queue operations such as ENQUEUE, DEQUEUE and Display
 14.		Write a C program to implement the Tree Traversals (Inorder, Preorder, Postorder)
@@ -19,9 +18,9 @@ POP and PEEK
 18.		Write a C program to arrange a series of numbers using Quick Sort
 19.		Write a C program to implement Heap sort
 20.		Write a program to perform the following operations:
-a) Insert an element into a AVL tree
-b) Delete an element from a AVL tree
-c) Search for a key element in a AVL tree
+         a) Insert an element into a AVL tree
+         b) Delete an element from a AVL tree
+         c) Search for a key element in a AVL tree
 21.		Write a C program to Graph traversal using Breadth First Search
 22.		Write a C program to Graph traversal using Depth First Search
 23.		Implementation of Shortest Path Algorithms using Dijkstra’s Algorithm
